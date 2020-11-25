@@ -1,0 +1,103 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kullanıcı Giriş Sayfası</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Content/Login/img/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link href="~/Content/Login/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Login/css/bootstrap.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <link href="~/Content/Login/css/animate.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/Login/css/hamburgers.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/Login/css/select2.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/Login/css/util.css" rel="stylesheet" />
+    <link href="~/Content/Login/css/main.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="~/Content/Login/img/img-01.png" />
+                </div>
+
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title" style="text-decoration: underline; text-decoration-color: green">
+                        Pers<span style="color:lightcoral">o</span>nel Giriş
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Kurum Sicilinizi Giriniz">
+                        <input class="input100" type="text" name="email" placeholder="abSiciliniz">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user-shield" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Şifre Gereklidir">
+                        <input class="input100" type="password" name="pass" placeholder="Şifre">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-key" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Giriş Yap
+                        </button>
+                    </div>
+
+                    <div class="text-center p-t-12">
+                        <a class="txt2" href="#">
+                            Şifre Hatırlat
+                        </a>
+                    </div>
+
+                    <div class="text-center p-t-136">
+                        <a class="txt2" href="@Url.Action("Add")">
+                            <span style="font-size: 10px; text-decoration: underline; color:green">Yeni Kullanıcı Kaydı</span>
+                            <i class="fa fa-arrow-right m-l-5" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/popper.js"></script>
+    <script src="~/Content/Login/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/main.js"></script>
+
+</body>
+</html>
